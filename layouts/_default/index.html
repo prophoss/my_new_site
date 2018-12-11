@@ -6,6 +6,7 @@
 <body class="index_body">
     <nav>
         {{range where .Pages "Title" "About"}}
+        {{.Title}}
         <ul>
             <li><a href="{{.URL}}">{{.Title}}</a></li>
         </ul>
