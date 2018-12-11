@@ -5,7 +5,7 @@
 <h1>My Hugo Adventure</h1>
 <body class="index_body">
     <nav>
-        {{range where .Pages "Title" "!=" "About"}}
+        {{range where .Pages "Title" "About"}}
         <ul>
             <li><a href="{{.URL}}">{{.Title}}</a></li>
         </ul>
