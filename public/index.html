@@ -12,7 +12,13 @@
 <h1>My Hugo Adventure</h1>
 <body class="index_body">
     <nav>
-        
+        {{range .Pages }}
+       
+        <ul>
+            <li><a href="{{.URL}}">{{.Title}}</a></li>
+        </ul>
+    
+    {{end}}
     </nav>
 </body>
 
